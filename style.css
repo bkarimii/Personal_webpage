@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+	background: #212121;
+	font-size:18px;
+	line-height: 32px;
+	color: #ffffff;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+	}
+
+#nav-h1{
+	font-size: 35px;
+	color: #d8c8c8;
+	margin-top: 100px;
+	text-align:center;
+	
+	font-family: 'Bree Serif', 'serif';
+	text-shadow: 0 0 3px black
+}	
+
+h3 {
+	
+	font-size: 25px;
+	text-align: center;
+	color: #FFF;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	font-family: 'Bree Serif', 'serif';
+	color: #ffffff;
+	text-shadow: 0 0 3px black
+	}
+
+#container {
+	margin: 0 auto;
+}
+
+#top-p{
+	text-align: center;
+	margin-top: 8px;
+	color: #ffffff;
+	text-shadow: 0 0 3px black;
+}
+
+.logo_container{
+	margin-top: 20px;
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+
+.sign-log{
+	display: inline-block;
+	justify-content: right;
+	margin: 0;
+	padding: 0;
+
+}
+.sign-log a{
+	text-decoration: none;
+	text-align: center;
+	width: 85px;
+	background-color: blue;
+	margin: 5px;
+	padding: 3px;
+	border: 2px solid white;
+	border-radius: 3px;
+	display: inline-block;
+	
+}
+
+#top-site-pic{
+	width: 150px;
+	height: 70px;
+	display: inline-block;
+	margin-right: 20px;
+	border-radius: 3px;
+	display: inline-block;
+
+}
+
+nav {
+	margin: 70 0 50px 0;
+	background-color: #0f7f15;
+	
+}
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #0f7f15;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* im making some changes ===================================*/
+
+
+
+
+/*End of changes =========================*/
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; 
+    
+}
+	
+
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+
+nav ul ul li {
+	width:180px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+	
+
+li > a:after { content:  ' >'; }
+li > a:only-child:after { content: ''; }
+
+
+main{
+	width: 80%;
+	border: 2px white ;
+	border-style: double;
+	margin: 20px auto;
+	padding: 3%;
+	border-radius: 3px;
+	border-color: #000000;
+	
+}
+
+
+ main p{
+
+	text-align: left;
+ }
+
+ #after-main{
+	text-align: justify;
+
+ }
+
+ 
+
+main div{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	
+	
+}
+
+.image-div{
+	
+	display: inline-block;
+	margin-top: 43px;
+		
+	
+}
+
+.image-div p{
+	font-size: 14px;
+	color: #f5f5f5;
+	text-shadow: 0 0 1px rgb(0, 0, 0);
+}
+
+
+.image-div img{
+	max-width: 100%;
+	height: 200px;
+	margin-top: 3px;
+
+}
+
+.content{
+	
+	margin-left: 4px;
+	text-align: left;
+	display: inline-block;
+	padding: 8px;
+	
+}
+
+.content h3{
+	color: rgb(187, 220, 249);
+
+}
+.content p{
+	text-align: left;
+	width: 95%;
+	margin: 4px auto;
+}
+
+.vid-div{
+
+	border: 0px solid white;
+
+	margin-top:125px ;
+	margin-bottom: 10px;
+}
+
+.vid-div iframe{
+
+	width: 60%;
+	height: 300px;
+	margin: 5px auto;
+	border: 01px;
+	border-radius: 3px;
+
+
+}
+
+
+.c-site-footer{
+	background-color: #0f7f15;
+	text-align: center;
+	padding: 0;
+	padding-top: 10px;
+	margin-top: 30px;
+	font-size: 14px;
+
+
+}
+
+
+.c-site-footer a{
+	text-decoration: none;
+}
+
+.c-site-footer a:hover{
+	color: black;
+}
+
+.socialmedia{
+	margin-top: 10px;
+}
+.socialmedia a{
+	margin: 8px;
+	width: 40px;
+	height: 40px;
+
+}
+
+.socialmedia img{
+	width: 40px;
+	height: 40px;
+}
+
+#support{
+	margin-bottom: 15px;;
+}
+
+#copy-right{
+
+	background-color: #0d6b11;
+	margin: 4px 0 0 0 ;
+}
