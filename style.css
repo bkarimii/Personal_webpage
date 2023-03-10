@@ -6,8 +6,12 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Orbitron:wght@400;500;600;800&display=swap);
+
 
 body {
+	font-family: 'Libre Baskerville', serif;
+	font-family: 'Orbitron', sans-serif;;
 	background: #212121;
 	font-size:18px;
 	line-height: 32px;
