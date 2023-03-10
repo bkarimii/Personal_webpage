@@ -93,7 +93,8 @@ h1 {
 }
 
 .sign-log a:hover{
-	opacity: .9;
+	background-color: #e3dddd;
+	color: black;
 }
 
 #top-site-pic{
