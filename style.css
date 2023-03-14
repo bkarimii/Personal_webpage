@@ -17,7 +17,7 @@ body {
 	line-height: 32px;
 	color: #ffffff;
 	word-wrap:break-word !important;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'libre,Open Sans', sans-serif;
 	}
 
 #nav-h1{
@@ -103,7 +103,7 @@ h1 {
 
 #top-site-pic{
 	width: 150px;
-	height: 70px;
+	height: 150px;
 	display: inline-block;
 	margin-right: 20px;
 	border-radius: 3px;
