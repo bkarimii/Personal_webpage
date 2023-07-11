@@ -9,17 +9,44 @@ document.addEventListener("DOMContentLoaded", function() {
       "https://eachscape.com/wp-content/uploads/2016/07/JScript.png",
       "https://www.lambdatest.com/blog/wp-content/uploads/2018/11/JPG-2.jpg"
     ];
-  
+
+    // Array of tooltip texts
+const tooltipTexts = [
+    "Learn Python from scratch ",
+    "ReactJS for web Developers ",
+    "Advance NodeJs ",
+    "Ubunto For Absoloute Beginers",
+    "JavaScript From Zero to Hero",
+    "Introduction to HTML&CSS"
+  ];
+  ////////
+
+
     const prevButton = document.getElementById("prevButton");
     const nextButton = document.getElementById("nextButton");
   
-    function showSlide() {
-      for (let i = 0; i < 3; i++) {
-        const imgIndex = (slideIndex + i) % imageSources.length;
-        slides[i].src = imageSources[imgIndex];
+    /*  function showSlide() {
+        for (let i = 0; i < 3; i++) {
+          const imgIndex = (slideIndex + i) % imageSources.length;
+          slides[i].src = imageSources[imgIndex];
+        }
+      } */
+
+      for (let i = 0; i < slides.length; i++) {
+        const txtIndex = (slideIndex + i) % tooltipTexts.length;
+        slides[i].title = tooltipTexts[txtIndex];
       }
-    }
-  
+
+      function showSlide() {
+        for (let i = 0; i < slides.length; i++) {
+          const imgIndex = (slideIndex + i) % imageSources.length;
+          const txtIndex = (slideIndex + i) % tooltipTexts.length;
+          slides[i].src = imageSources[imgIndex];
+          slides[i].title = tooltipTexts[txtIndex];
+        }
+  }
+
+      
     function prevSlide() {
       slideIndex--;
       if (slideIndex < 0) {
