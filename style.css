@@ -292,6 +292,16 @@ main div{
 	margin: 4px auto;
 }
 
+#popular_courses{
+	display: flex;
+	margin: 20px 10px;
+	justify-content: center;
+	align-items: center;
+	font-size: 45px;
+	font-weight: bold;
+	color: #0f7f15;
+}
+
 .carousel-container{
 	
 	width: 85%;
@@ -312,9 +322,7 @@ main div{
 	
 	transition: transform 0.2s;
   }
-  #popular_courses{
-	display: block;
-  }
+ 
   
   .slide {
 	flex: 0 0 33.33%;
