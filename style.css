@@ -260,15 +260,21 @@ main div{
 
 .carousel-container{
 	
-		width: 70%;
-		overflow: hidden;
-		margin: 20px auto;
+	width: 70%;
+	overflow: hidden;
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
 	  
 	  
 }
 .carousel {
-	width: 80%;
 	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+	width: 80%;
+	
 	transition: transform 0.5s;
   }
   
@@ -281,7 +287,12 @@ main div{
 	margin: 5px;
 	border: 2px solid white;
   }
-
+.button_div button{
+	margin: 3px;
+	border: 2px solid pink;
+	border-radius: 2px;
+	display: flex;
+}
 
 .vid-div{
 
