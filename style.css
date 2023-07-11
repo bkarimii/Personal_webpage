@@ -258,10 +258,28 @@ main div{
 	margin: 4px auto;
 }
 
-#carousel{
-	margin: 20px 0;
-	border: #0f7f15 solid;
+.carousel-container{
+	.carousel-container {
+		width: 80%;
+		overflow: hidden;
+	  }
+	  
 }
+.carousel {
+	width: 80%;
+	display: flex;
+	transition: transform 0.5s;
+  }
+  
+  .slide {
+	flex: 0 0 33.33%;
+  }
+  .slide {
+	width: 150px;
+	height: 130px;
+	margin: 5px;
+  }
+
 
 .vid-div{
 
