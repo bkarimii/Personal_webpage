@@ -260,38 +260,59 @@ main div{
 
 .carousel-container{
 	
-	width: 70%;
+	width: 85%;
 	overflow: hidden;
-	margin: 20px auto;
+	margin: 25px auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
   	align-items: center;
+	
 	  
 	  
 }
 .carousel {
-	display: flex;
+	display: inline-flexbox;
   	justify-content: space-between;
   	align-items: center;
-	width: 80%;
+	width: 79%;
 	
-	transition: transform 0.5s;
+	transition: transform 0.2s;
+  }
+  #popular_courses{
+	display: block;
   }
   
   .slide {
 	flex: 0 0 33.33%;
   }
   .slide {
-	width: 150px;
-	height: 130px;
-	margin: 5px;
+	width: 200px;
+	height: 137px;
+	margin:auto 5px;
 	border: 2px solid white;
   }
+.button_image_container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 .button_div button{
 	margin: 3px;
 	border: 2px solid pink;
 	border-radius: 2px;
-	display: flex;
+	width: 100px;
+	height: 50px;
+	padding: 4px ;
+	background-color: #c3bbed;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+.button_div button:hover{
+	background-color: #7575f0;
+	font-style: italic;
+	
+
 }
 
 .vid-div{
