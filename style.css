@@ -258,6 +258,11 @@ main div{
 	margin: 4px auto;
 }
 
+#carousel{
+	margin: 20px 0;
+	border: #0f7f15 solid;
+}
+
 .vid-div{
 
 	border: 0px solid white;
