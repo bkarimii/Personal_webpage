@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Course Shop</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <h1>Welcome to the Online Course Shop!</h1>
+
+  <div class="course">
+    <a href="cart.html?course=python">
+      <img src="python.jpg" alt="Python Course">
+    </a>
+    <h2>Python Course</h2>
+    <p>Learn Python from scratch.</p>
+    <button onclick="addToCart('Python Course')">Add to Cart</button>
+  </div>
+
+  <div class="course">
+    <a href="cart.html?course=react">
+      <img src="react.jpg" alt="React Course">
+    </a>
+    <h2>React Course</h2>
+    <p>ReactJS for web developers.</p>
+    <button onclick="addToCart('React Course')">Add to Cart</button>
+  </div>
+
+  <!-- Add more courses -->
+
+  <script>
+    function addToCart(courseName) {
+      // Get the cart from local storage or initialize it if it doesn't exist
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // Add the selected course to the cart
+      cart.push(courseName);
+
+      // Store the updated cart back to local storage
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
+  </script>
+</body>
+</html>

@@ -21,7 +21,7 @@ body {
 	}
 
 	/* Styling for the popup */
-    .popup {
+    .popup_class {
 		display: none;
 		position: fixed;
 		top: 50%;

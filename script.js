@@ -88,13 +88,43 @@ const tooltipTexts = [
 
   });
 
-  function closePopup() {
+/*----------------------------------------------------------------*/
+
+  function redirectToCart(imageUrl, courseName) {
+    const cartUrl = `cart.html?course=${encodeURIComponent(courseName)}&image=${encodeURIComponent(imageUrl)}`;
+    window.location.href = cartUrl;
+  }
+
+  function addToCart(courseName) {
+    // Get the cart from local storage or initialize it if it doesn't exist
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Add the selected course to the cart
+    cart.push(courseName);
+
+    // Store the updated cart back to local storage
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+// Get the query parameters from the URL
+const urlParams = new URLSearchParams(window.location.search);
+
+// Retrieve the values of the course and image parameters
+const course = urlParams.get('course');
+const image = urlParams.get('image');
+
+// Use the course and image values to display the selected course and image in the cart
+console.log("Selected Course:", course);
+console.log("Selected Image URL:", image);
+
+ /* function closePopup() {
     var popup = document.getElementById('popup');
     popup.style.display = 'none';
   }
   
   var popup = document.getElementById('popup');
-  popup.style.display = 'block';
+  popup.style.display = 'block';*/
+
+  
   
 
   
