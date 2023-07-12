@@ -84,5 +84,16 @@ const tooltipTexts = [
         signupForm.reset(); // Reset the form fields
       }
     });
+  
+
   });
+
+  function closePopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+  }
+
+  var popup = document.getElementById('popup');
+  popup.style.display = 'block';
+
   

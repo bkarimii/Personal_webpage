@@ -19,6 +19,24 @@ body {
 	word-wrap:break-word !important;
 	font-family: 'libre,Open Sans', sans-serif;
 	}
+
+	/* Styling for the popup */
+    .popup {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		padding: 20px;
+		border: 1px solid #ccc;
+	  }
+	  .close-btn {
+		cursor: pointer;
+		float: right;
+		font-weight: bold;
+	  }
+
 	.modal {
 		display: none;
 		position: fixed;
