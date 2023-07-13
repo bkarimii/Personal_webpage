@@ -124,7 +124,37 @@ console.log("Selected Image URL:", image);
   var popup = document.getElementById('popup');
   popup.style.display = 'block';*/
 
-  
+
+  //---------------------------------------------------------------
+
+ // When the HTML page loads
+ window.addEventListener('DOMContentLoaded', function() {
+  // Check if the popup has been shown before
+  var popupShown = localStorage.getItem('popupShown');
+
+  // If the popup has not been shown before
+  if (!popupShown) {
+    // Get the modal element
+    var modal = document.getElementById('popup-div');
+
+    // Display the content
+    modal.style.display = 'block';
+
+    // Get the close button
+    var closeButton = document.getElementsByClassName('close')[0];
+
+    // When the close button is clicked
+    closeButton.addEventListener('click', function() {
+      // Hide the content
+      modal.style.display = 'none';
+
+      // Set a flag to indicate that the popup has been shown
+      localStorage.setItem('popupShown', true);
+    });
+  }
+});
+
+
   
 
   
