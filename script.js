@@ -128,31 +128,24 @@ console.log("Selected Image URL:", image);
   //---------------------------------------------------------------
 
  // When the HTML page loads
- window.addEventListener('DOMContentLoaded', function() {
-  // Check if the popup has been shown before
-  var popupShown = localStorage.getItem('popupShown');
+window.addEventListener('DOMContentLoaded', function() {
+  // Get the popup-div element
+  var popup_content = document.getElementById('popup-div');
 
-  // If the popup has not been shown before
-  if (!popupShown) {
-    // Get the modal element
-    var modal = document.getElementById('popup-div');
+  // Display the content
+  popup_content.style.display = 'block';
 
-    // Display the content
-    modal.style.display = 'block';
+  // Get the close button
+  var closeButton = document.getElementsByClassName('close')[0];
 
-    // Get the close button
-    var closeButton = document.getElementsByClassName('close')[0];
-
-    // When the close button is clicked
-    closeButton.addEventListener('click', function() {
-      // Hide the content
-      modal.style.display = 'none';
-
-      // Set a flag to indicate that the popup has been shown
-      localStorage.setItem('popupShown', true);
-    });
-  }
+  // When the close button is clicked
+  closeButton.addEventListener('click', function() {
+    // Hide the content
+    popup_content.style.display = 'none';
+  });
 });
+
+
 
 
   
