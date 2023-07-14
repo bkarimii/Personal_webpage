@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let slideIndex = 0;
     const slides = document.getElementsByClassName("slide");
     const imageSources = [
-      "https://miro.medium.com/v2/resize:fit:840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg",
+      "C:\Users\bkari\OneDrive\Desktop\personal_webpage\Personal_webpage\Carousel\Python.png",
       "https://www.freecodecamp.org/news/content/images/2021/06/Ekran-Resmi-2019-11-18-18.08.13.png",
       "https://blog.logrocket.com/wp-content/uploads/2021/04/handling-dispatching-events-nodejs.png",
       "https://repository-images.githubusercontent.com/335476519/61ef634e-0b5f-4d27-9fb6-c64d526c595c",
